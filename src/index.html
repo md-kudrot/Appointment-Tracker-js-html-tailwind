@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment-Tracker</title>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body class="bg-black">
-    <h1 class="bg-amber-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque debitis sint necessitatibus explicabo repellendus tempore voluptatibus quidem esse perspiciatis, aspernatur voluptatum iste ea doloribus, repellat, iusto porro suscipit ipsa? Amet minus ut aliquid nulla ullam impedit id perferendis! Suscipit dolor ab, id ad quasi corrupti est doloribus dolores quia tenetur corporis adipisci voluptatem! Quisquam ratione suscipit eaque pariatur quidem natus odit praesentium possimus, earum tenetur consequuntur asperiores velit perferendis amet sapiente animi temporibus non qui perspiciatis fugit mollitia dolore culpa accusamus dicta! Consectetur inventore dolores ad veniam eius.</h1>
+    <div class="bg-black flex items-center justify-center h-dvh">
+        <div class="w-[25rem] py-8 px-4 rounded  bg-gradient-to-r from-orange-500 to-pink-500">
+            <form class="space-y-6">
+                <label class="text-sm font-medium text-gray-700">Full Name</label>
+                <input class="outline- w-full border bg-gray-50 rounded p-2" type="text" placeholder="Enter Your Name"
+                    required>
+
+                <label class="text-sm font-medium text-gray-700">Email Address</label>
+                <input class="outline- w-full border bg-gray-50 rounded p-2" type="email" placeholder="Enter Your Mail"
+                    required>
+
+                <label class="text-sm font-medium text-gray-700">Phone Number</label>
+                <input class="outline- w-full border bg-gray-50 rounded p-2" maxlength="11" pattern="[0-9+]{11,15}"
+                    title="Enter a valid phone number" type="tel" placeholder="01XXXXXXXXX" required>
+
+                <div class="flex gap-2 flex-wrap">
+
+                    <div class="flex-1">
+                        <label class="text-sm font-medium text-gray-700">Appointment Date</label>
+                        <input class="outline- w-full border bg-gray-50 rounded p-2" type="date" required>
+                    </div>
+
+                    <div class="flex-1">
+                        <label class="text-sm font-medium text-gray-700">Appointment Time</label>
+                        <input class="outline- w-full border bg-gray-50 rounded p-2" type="time" required>
+                    </div>
+                </div>
+
+                <label class="text-sm font-medium text-gray-700">Purpose / Reason</label>
+                <select name="purpose" class="bg-white w-full p-2 rounded border text-black outline-none" required>
+                    <option value="web_dev">Web Development Consultation</option>
+                    <option value="frontend_design">Frontend Design Review</option>
+                    <option value="debugging">Code Debugging Session</option>
+                    <option value="js_problem">JavaScript Problem Solving</option>
+                    <option value="react_discussion">React Project Discussion</option>
+                </select>
+                
+                <label class="text-sm font-medium text-gray-700">More details (optional)</label>
+                <textarea rows="3" class="w-full p-2 rounded outline-none text-black bg-gray-50" placeholder="Optional: Provide more details" name="" id=""></textarea>
+
+                <button type="submit" class="w-full bg-black text-white p-2 rounded">Summit</button>
+
+            </form>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
